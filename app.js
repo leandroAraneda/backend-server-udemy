@@ -6,6 +6,9 @@ var bodyParser = require('body-parser');
 // Inicializar variables
 var app = express();
 
+// Directorio público
+app.use(express.static('public'));
+
 // Body Parser
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
